@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.card-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.card-section h2 {
+    text-align: center;
+    color: #333;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+.withdrawals-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.withdrawals-table th,
+.withdrawals-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.withdrawals-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.withdrawals-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.bg-accent {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bg-accent:hover {
+    background-color: #218838;
+}
+
+.bg-destructive {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bg-destructive:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+    .withdrawals-table {
+        font-size: 14px;
+    }
+
+    .withdrawals-table th,
+    .withdrawals-table td {
+        padding: 8px;
+    }
+
+    .bg-accent,
+    .bg-destructive {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-section {
+        padding: 10px;
+    }
+
+    .withdrawals-table {
+        font-size: 12px;
+    }
+
+    .withdrawals-table th,
+    .withdrawals-table td {
+        padding: 6px;
+    }
+
+    .bg-accent,
+    .bg-destructive {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
